@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Gamuda Spin To Win</title>
+    <title>Unity Web Player | Gamuda Spin To Win</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=512 height=1000 tabindex="-1" style="width: 512px; height: 1000px; background: #231F20"></canvas>
@@ -25,6 +25,7 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
+        arguments: [],
         dataUrl: "Build/GamudaSpinTheWheel.data",
         frameworkUrl: "Build/GamudaSpinTheWheel.framework.js",
         codeUrl: "Build/GamudaSpinTheWheel.wasm",
